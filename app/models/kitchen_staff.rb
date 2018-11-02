@@ -1,0 +1,2 @@
+class KitchenStaff < ApplicationRecord
+end
