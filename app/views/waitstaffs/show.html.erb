@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tables:</strong>
+  <%= @waitstaff.tables %>
+</p>
+
+<p>
+  <strong>Customer names:</strong>
+  <%= @waitstaff.customer_names %>
+</p>
+
+<p>
+  <strong>Waitstaff:</strong>
+  <%= @waitstaff.waitstaff_id %>
+</p>
+
+<p>
+  <strong>Waitstaff name:</strong>
+  <%= @waitstaff.waitstaff_name %>
+</p>
+
+<%= link_to 'Edit', edit_waitstaff_path(@waitstaff) %> |
+<%= link_to 'Back', waitstaffs_path %>

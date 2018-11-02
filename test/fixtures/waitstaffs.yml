@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tables: 1
+  customer_names: MyString
+  waitstaff_id: 1
+  waitstaff_name: MyString
+
+two:
+  tables: 1
+  customer_names: MyString
+  waitstaff_id: 1
+  waitstaff_name: MyString
