@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :customers
   resources :menus
   resources :kitchen_staffs
   resources :waitstaffs
