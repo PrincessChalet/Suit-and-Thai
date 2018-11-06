@@ -14,3 +14,27 @@
  *= require_tree .
  *= require_self
  */
+img.menu-show{
+	width: 400px;
+	height: auto;
+}
+
+.menu-box {
+	height: 600px;
+	position: relative;
+	box-shadow: 10px 10px 5px #888888;
+	background: #bdc3c7;
+	margin-bottom: 20px;
+}
+
+img.menu-index{
+	height: 70%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.menu-box ul {
+	list-style-type:none;
+	position: absolute;
+	bottom: 0;
+}
