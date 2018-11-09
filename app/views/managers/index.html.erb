@@ -1,15 +1,21 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Managers</h1>
+<button type="button" class="btn btn-secondary btn-lg btn-block">
+ <% if !admin_signed_in? %>
+    <%= link_to 'log in',  new_user_session_path%>
+  <% end %>
+  <% if admin_signed_in? %>
+    <%= link_to 'log out',  destroy_user_session_path%>
+  <% end %>
+</button>
 
-<table>
-  <thead>
-    <tr>
-      <th>Manager name</th>
-      <th>Manager pin</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to 'Customer', customers_path  %></button>
+<button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to 'Waitstaff', waitstaffs_path %></button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">
+  <%= link_to 'Kitchen', kitchen_staffs_path  %></button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">
+  <%= link_to 'Manager', managers_path%></button>
 
   <tbody>
     <% @managers.each do |manager| %>
@@ -26,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Manager', new_manager_path %>
+<!--<%= link_to 'New Manager', new_manager_path %> -->
