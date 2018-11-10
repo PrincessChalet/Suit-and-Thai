@@ -1,6 +1,59 @@
 <p id="notice"><%= notice %></p>
+<nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <button class="btn btn-sm btn-outline-secondary" type="button">
+      <%= link_to 'Drink Refill', waitstaffs_path %>
+    </button>
+
+    <button class="btn btn-sm btn-outline-secondary" type="button">
+      <%= link_to 'Request Waiter', waitstaffs_path %>
+    </button>
+      <button class="btn btn-sm btn-outline-secondary float-left" type="button">
+        <%= link_to 'Pay Now/ View Order', waitstaffs_path %>
+      </button>
+    </form>
+
+  </form>
+</nav>
 
 <h1>Customers</h1>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+ <img src="winged.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+ <input type="button" value="Game1" onclick="window.location.href='pages/Game1'" />
+</div>
+
+<div class="container">
+ <img src="rapid.jpg" class="img-thumbnail" alt="Rapid Terre" width="304" height="236"> 
+
+<input type="button" value="Game2" onclick="window.location.href='pages/Game2'" />
+</div>
+
+<div class="container">
+  <img src="hangman.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+  <input type="button" value="Game3" onclick="window.location.href='pages/Game3" />
+</div>
+
 
 <table>
   <thead>

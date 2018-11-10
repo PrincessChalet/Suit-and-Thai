@@ -34,7 +34,7 @@ gem 'devise'
 gem 'fog-aws' 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'responders', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
