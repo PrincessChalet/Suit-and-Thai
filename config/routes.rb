@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
+#  devise_for :admins
   devise_for :users
   resources :managers
   resources :orders
@@ -11,4 +11,8 @@ Rails.application.routes.draw do
 
   root "managers#index"
   get 'pages/appetizers'
+  
+  devise_for :admins do
+    get '/admins/sign_out' => 'admins/sessions#destroy'
+  end
 end
