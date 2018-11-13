@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-def Appetizers
+def NutritionalInfo 
 end
 
 def Game1

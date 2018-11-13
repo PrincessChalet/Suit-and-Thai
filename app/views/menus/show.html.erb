@@ -15,31 +15,8 @@
   <%= "$" %> <%= @menu.item_price %>
 </h5>
 
-<h4> Nutritional Info </h4>
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" 
-  	<% if @menu.image? %> 
-		<%= image_tag @menu.image.url, class: "menu-show" %>
-	<% end %>
-</div>
-  <div class="card-body">
-    <h5 class="card-title" tabindex="0"><%=@menu.item_name%></h5>
-    <p class="card-text" tabindex="0">
-    	<%= @menu.item_description %>
-  		<%= "$" %> <%= @menu.item_price %>
-  	</p>
-  </div>
 
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Serving Size 4 rolls (256g)</li>
-    <li class="list-group-item">Calories 592 | Calories from Fat 224</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
+
 <!--<p>
   <strong>Item price:</strong>
   <%= @menu.item_price %>
@@ -49,6 +26,7 @@
   <strong>Item picture:</strong>
   <%= @menu.item_picture %>
 </p> -->
-
+<%= link_to 'Add to Order', new_order_path %> |
 <%= link_to 'Edit', edit_menu_path(@menu) %> |
-<%= link_to 'Back', menus_path %>
+<%= link_to 'Back', menus_path %> |
+<%= link_to 'Nutritional Info', pages_NutritionalInfo_path %>
