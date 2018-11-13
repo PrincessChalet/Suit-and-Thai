@@ -2,9 +2,11 @@
 <html>
   <head>
     <nav class="navbar navbar-dark bg-dark">
+      <%if admin_signed_in? %>
       <a class="navbar-brand"
       <%= link_to 'Suit & Thai', managers_path%>
       </a>
+      <% end %>
     </nav>
     
     <title>SuitAndThai</title>

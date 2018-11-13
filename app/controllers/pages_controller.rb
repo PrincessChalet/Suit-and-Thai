@@ -12,4 +12,7 @@ end
 def Game3
 end
 
+def ManagerOptions
+end
+
 end
