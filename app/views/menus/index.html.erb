@@ -1,52 +1,177 @@
 <div class="container">
 <p id="notice"><%= notice %></p>
 
-<div class="inline_block">
+<h3> Appetizers </h3>
 <div class="row">
-    <div class= "menu-box">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="Vegetable-Spring-Rolls.jpg">
-      <div class="card-body">
-        <h5 class="card-title">Veggie Spring rolls</h5>
-        <p class="card-text">Fried rice paper rolls | glass noodles | mixed vegetable | sweet & sour sauce. (4 pieces)</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Price: $14.99</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
-    </div>
-</div>
-</div>
-
-<!--<h1>Menu</h1>
-  <div class="row">
-  <% @menus.each do |menu| %>
   <div class="col-md-4">
-     <div class="menu-box">
-      <% if menu.image? %>
-        <img src="Vegetable-Spring-Rolls .jpg" > 
-      <% end %>
-
+    <div class= "menu-box">
+      <img class="card-img-top" src="Vegetable-Spring-Rolls.jpg">
+        <h5>Veggie Spring rolls</h5>
+        <p>Fried rice paper rolls | glass noodles | mixed vegetable | sweet & sour sauce. (4 pieces)</p>
+      </div>
       <ul>
-        <h5><li><%= menu.item_name %></li></h5>
-        <li><%= menu.item_description %></li>
-        <li><%="$" %><%= menu.item_price %></li>
-        <% if admin_signed_in? %>
-          <%= link_to 'Show', menu %>
-          <%= link_to 'Edit', edit_menu_path(menu) %>
-          <%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <% end %>
+        <li>Price: $14.99</li>
       </ul>
-  </div>  
-    <br>
-   </div>
-  <% end %>
-</div> 
-<br>
-</div><!--/row-->
+    </div>
+
+  <div class="col-md-4">
+  <div class= "menu-box">
+      <img class="card-img-top" src="corn patties.jpg">
+      <div>
+        <h5>Corn Patties</h5>
+        <p>Crispy corn | sweet & sour sauce. (4 pieces)</p>
+      </div>
+      <ul>
+        <li>Price: $14.99</li>
+      </ul>
+    </div>
+  </div>
+
+ <div class="col-md-4">
+ <div class= "menu-box">
+      <img class="card-img-top" src="Gyoza.jpg">
+      <div>
+        <h5>Gyoza</h5>
+        <p>Fried pork & vegetable pot stickers | soy sauce (6 pieces)</p>
+      </div>
+      <ul>
+        <li>Price: $15.99</li>
+      </ul>
+    </div>
+    </div>
+</div>
+
+<h3> Entrees </h3>
+<h4>Chicken / Pork / Tofu / Vegetable $18.99 | Beef $19.99 | Shrimp $20.99</h4>
+<div class="row">
+  <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="pad thai.jpg">
+        <h5>Pad Thai</h5>
+        <p>Flat rice noodles | broccoli | egg | carrots | black soy sauce</p>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="Pad See Eew.jpg">
+        <h5>Pad See Eew</h5>
+        <p>Rice noodles | egg | bean sprouts | tamarind sauce | green onion | peanuts</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="yellow curry.jpg">
+        <h5>Yellow Curry</h5>
+        <p>Carrot | potato | yellow onion | coconut milk | yellow curry paste</p>
+      </div>
+    </div>
+</div>
+
+<h3> Kids Menu </h3>
+<div class="row">
+  <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="Beef and Broccoli.jpg">
+        <h5>Beef and Broccoli</h5>
+        <p>White or brown steamed rice</p>
+      <ul>
+        <li>Price: $15.99</li>
+      </ul>
+    </div>
+  </div>
+
+   <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="Orange Chicken.jpg">
+        <h5>Orange Chicken</h5>
+        <p>White or brown steamed rice</p>
+      <ul>
+        <li>Price: $15.99</li>
+      </ul>
+    </div>
+  <div class="col-md-4">
+
+  <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="Fried Rice.jpg">
+        <h5>Fried Rice</h5>
+        <p>Scrambled eggs | Carrots | Peas</p>
+      <ul>
+        <li>Price: $15.99</li>
+      </ul>
+  </div>
+</div>
+</div>
+
+<h3> Desserts </h3>
+<div class="row">
+  <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="Mango sticky rice.jpg">
+        <h5>Mango sticky rice</h5>
+        <p>Mango | sweet sticky rice | coconut milk</p>
+      <ul>
+        <li>Price: $15.99</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="Custard sticky rice.jpg">
+        <h5>Custard sticky rice</h5>
+        <p>Egg custard | sweet sticky rice | coconut milk</p>
+      <ul>
+        <li>Price: $14.99</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="Green tea ice cream.jpg">
+        <h5>Green tea ice cream</h5>
+      <ul>
+        <li>Price: $14.50</li>
+      </ul>
+  </div>
+</div>
+</div>
+
+<h3> Drinks </h3>
+<div class="row">
+   <div class="col-md-4">
+    <div class= "menu-box">
+      <img class="card-img-top" src="hot green tea.jpg">
+        <h5>Hot Green Tea</h5>
+      <ul>
+        <li>Price: $12.99</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+  <div class= "menu-box">
+      <img class="card-img-top" src="Thai Iced Tea.jpg">
+        <h5>Thai Iced Tea</h5>
+      </div>
+      <ul>
+        <li>Price: $12.99</li>
+      </ul>
+  </div>
+
+ <div class="col-md-4">
+  <div class= "menu-box">
+      <img class="card-img-top" src="Soft Drinks.jpg">
+        <h5>Soft Drinks</h5>
+      <ul >
+        <li> Coke, Diet Coke, Sprite and Dr.Pepper (Refills available for dine-in)</li>
+        <li>Price: $11.99</li>
+      </ul>
+    </div>
+ </div>
+</div>
 
 <%= link_to 'New Menu', new_menu_path %>
