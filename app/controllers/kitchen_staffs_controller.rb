@@ -71,4 +71,5 @@ class KitchenStaffsController < ApplicationController
     def kitchen_staff_params
       params.require(:kitchen_staff).permit(:chef_name)
     end
+
 end
