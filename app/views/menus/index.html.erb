@@ -1,52 +1,294 @@
-<div class="container">
-<p id="notice"><%= notice %></p>
+<html>
+<head>
 
-<div class="inline_block">
-<div class="row">
-    <div class= "menu-box">
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="Vegetable-Spring-Rolls.jpg">
-      <div class="card-body">
-        <h5 class="card-title">Veggie Spring rolls</h5>
-        <p class="card-text">Fried rice paper rolls | glass noodles | mixed vegetable | sweet & sour sauce. (4 pieces)</p>
+<style>
+
+    .menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(92, 92, 92);
+}
+
+.menu-section {
+  margin-bottom: 80px;
+}
+
+input[type=submit] {
+    width: 15em;  height: 2em;
+}
+
+.menu-section-title {
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0;
+  text-align: Center;
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
+
+
+
+
+</style>
+
+
+
+
+
+<div class="menu-body">
+   <!-- Section starts: Appetizers -->
+   <div class="menu-section">
+      <h2 class="menu-section-title">APPETIZERS</h2>
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+             <form action="/menu/cart" method="post">
+              <img src = "Vegetable-Spring-Rolls.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Vegetable-Spring-Rolls"value="Vegetable-Spring-Rolls"></input>
+         </div>
+         <div class="menu-item-price">
+            $14.99
+         </div>
+         <div class="menu-item-description">
+            Fried rice paper rolls | glass noodles | mixed vegetable | sweet & sour sauce. (4 pieces)
+
+         </div>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Price: $14.99</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+      <!-- Item ends -->
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+              <img src = "corn patties.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Corn patties"value="Corn patties"></input>
+         </div>
+         <div class="menu-item-price">
+            $14.99
+         </div>
+         <div class="menu-item-description">
+            Everything you get in a traditional Crispy corn | sweet & sour sauce. (4 pieces)
+
+         </div>
       </div>
-    </div>
-    </div>
-</div>
-</div>
-
-<!--<h1>Menu</h1>
-  <div class="row">
-  <% @menus.each do |menu| %>
-  <div class="col-md-4">
-     <div class="menu-box">
-      <% if menu.image? %>
-        <img src="Vegetable-Spring-Rolls .jpg" > 
-      <% end %>
-
-      <ul>
-        <h5><li><%= menu.item_name %></li></h5>
-        <li><%= menu.item_description %></li>
-        <li><%="$" %><%= menu.item_price %></li>
-        <% if admin_signed_in? %>
-          <%= link_to 'Show', menu %>
-          <%= link_to 'Edit', edit_menu_path(menu) %>
-          <%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <% end %>
-      </ul>
-  </div>  
-    <br>
+      <!-- Item ends -->
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+          <img src = "Gyoza.JPG" alt="Cinque Terre" width="300" height="200">
+            <input type="submit" name="Gyoza"value="Gyoza"></input>
+         </div>
+         <div class="menu-item-price">
+            $15.99
+         </div>
+         <div class="menu-item-description">
+          Fried pork & vegetable pot stickers | soy sauce (6 pieces)
+         </div>
+      </div>
+      <!-- Item ends -->
+      <!-- Item starts -->
+      
+      <!-- Item ends -->
    </div>
-  <% end %>
-</div> 
-<br>
-</div><!--/row-->
+   <!-- Section ends: Appetizers -->
+   <!-- Section starts: Drinks -->
+   <div class="menu-section">
+      <h2 class="menu-section-title">DRINKS</h2>
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+           <img src = "hot green tea.JPG" alt="Cinque Terre" width="300" height="200">
+            <input type="submit" name="Hot Green Teas" value="Hot Green Teas"></input>
+         </div>
+         <div class="menu-item-price">
+            $12.99
+         </div>
+         <div class="menu-item-description">
+           
+         </div>
+      </div>
+      <!-- Item ends -->
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+           <img src = "Thai Iced Tea.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Thai Iced Tea"value="Thai Iced Tea"></input>
+         </div>
+         <div class="menu-item-price">
+            $12.99
+         </div>
+         <div class="menu-item-description">
+          
+         </div>
+      </div>
+      <!-- Item ends -->
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+             <img src = "Soft Drinks.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Soft Drinks"value="Soft Drinks"></input>
+             Coke, Diet Coke, Sprite and Dr.Pepper (Refills available for dine-in)
+         </div>
+         <div class="menu-item-price">
+            $11.99
+         </div>
+         <div class="menu-item-description">
+            
+         </div>
+      </div>
 
-<%= link_to 'New Menu', new_menu_path %>
+
+<div class="menu-item">
+         <div class="menu-item-name">
+           <img src = "water.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Water"value="Water"></input>
+         </div>
+         <div class="menu-item-price">
+            $0.00
+         </div>
+
+
+
+
+
+<div class="menu-body">
+   <!-- Section starts: Appetizers -->
+   <div class="menu-section">
+      <h2 class="menu-section-title">KIDS MENU</h2>
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+             <form action="/menu/cart" method="post">
+              <img src = "Beef and Broccoli.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Beef and Broccoli"value="Beef and Broccoli"></input>
+         </div>
+         <div class="menu-item-price">
+            $15.99
+         </div>
+         <div class="menu-item-description">
+             White or brown steamed rice
+
+         </div>
+      </div>
+      <!-- Item ends -->
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+              <img src = "Orange Chicken.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Orange Chicken"value="Orange Chicken"></input>
+         </div>
+         <div class="menu-item-price">
+            $15.99
+         </div>
+         <div class="menu-item-description">
+             White or brown steamed rice
+
+
+         </div>
+
+
+
+         <div class="menu-item">
+         <div class="menu-item-name">
+              <img src = "Fried Rice.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Fried Rice"value="Fried Rice"></input>
+         </div>
+         <div class="menu-item-price">
+            $15.99
+         </div>
+         <div class="menu-item-description">
+           Scrambled eggs | Carrots | Peas
+
+         </div>
+
+
+
+
+
+
+
+         <div class="menu-body">
+   <!-- Section starts: Appetizers -->
+   <div class="menu-section">
+      <h2 class="menu-section-title">DESSERTS</h2>
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+             <form action="/menu/cart" method="post">
+              <img src = "Mango Sticky Rice.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Mango Sticky Rice"value="Mango Sticky Rice"></input>
+         </div>
+         <div class="menu-item-price">
+            $15.99
+         </div>
+         <div class="menu-item-description">
+             Mango | sweet sticky rice | coconut milk.
+
+
+         </div>
+      </div>
+      <!-- Item ends -->
+      <!-- Item starts -->
+      <div class="menu-item">
+         <div class="menu-item-name">
+              <img src = "Custard sticky rice.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Custard sticky rice"value="Custard sticky rice"></input>
+         </div>
+         <div class="menu-item-price">
+            $14.99
+         </div>
+         <div class="menu-item-description">
+            Egg custard | sweet sticky rice | coconut milk.
+
+         </div>
+
+
+
+         <div class="menu-item">
+         <div class="menu-item-name">
+              <img src = "Green tea ice cream.JPG" alt="Cinque Terre" width="300" height="200">
+             <input type="submit" name="Green tea ice cream "value="Green tea ice cream "></input>
+         </div>
+         <div class="menu-item-price">
+            $14.50
+         </div>
+         <div class="menu-item-description">
+            
+
+         </div>
+         </div>
+
+
+
+      
+         
+<button type="submit" class="btn btn-success" >Checkout</button>
+</form>
+
+
+</head>
+</body>
+</html>
