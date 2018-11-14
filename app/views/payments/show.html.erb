@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cc num:</strong>
+  <%= @payment.cc_num %>
+</p>
+
+<p>
+  <strong>Cash amt:</strong>
+  <%= @payment.cash_amt %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @payment.total %>
+</p>
+
+<p>
+  <strong>Tip:</strong>
+  <%= @payment.tip %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>
