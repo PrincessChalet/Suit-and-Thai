@@ -1,0 +1,2 @@
+client_id: 5fd8627b6a7693b
+client_secret: e40f0d0a72c5f43bf44e183ed5b431201f29d5da
