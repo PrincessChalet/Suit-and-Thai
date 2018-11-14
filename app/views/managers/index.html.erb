@@ -3,10 +3,10 @@
 <h1>Managers</h1>
 <button type="button" class="btn btn-secondary btn-lg btn-block">
  <% if !admin_signed_in? %>
-    <%= link_to 'log in',  new_user_session_path%>
+    <%= link_to 'log in',  new_admin_session_path%>
   <% end %>
   <% if admin_signed_in? %>
-    <%= link_to 'log out',  destroy_user_session_path%>
+    <%= link_to 'log out',  destroy_admin_session_path, :method => :delete  %>
   <% end %>
 </button>
 
@@ -15,7 +15,7 @@
 <button type="button" class="btn btn-secondary btn-lg btn-block">
   <%= link_to 'Kitchen', kitchen_staffs_path  %></button>
 <button type="button" class="btn btn-secondary btn-lg btn-block">
-  <%= link_to 'Manager', managers_path%></button>
+  <%= link_to 'Manager', pages_ManagerOptions_path%></button>
 
   <tbody>
     <% @managers.each do |manager| %>
