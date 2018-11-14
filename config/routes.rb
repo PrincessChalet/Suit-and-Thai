@@ -15,7 +15,9 @@ Rails.application.routes.draw do
   get 'pages/Game2'
   get 'pages/Game3'
   get 'pages/ManagerOptions'
-  
+
+  get 'pages/dailyRevenue'
+
   devise_for :admins do
     get '/admins/sign_out' => 'admins/sessions#destroy'
   end

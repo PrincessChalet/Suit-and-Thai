@@ -13,6 +13,11 @@ def Game3
 end
 
 def ManagerOptions
+
 end
+
+def dailyRevenue
+end
+
 
 end
