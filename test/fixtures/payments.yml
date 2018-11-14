@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cc_num: 1
+  cash_amt: 1.5
+  total: 1.5
+  tip: 1.5
+
+two:
+  cc_num: 1
+  cash_amt: 1.5
+  total: 1.5
+  tip: 1.5

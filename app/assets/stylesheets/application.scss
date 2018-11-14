@@ -34,11 +34,24 @@ img.menu-index{
 	object-fit: cover;
 }
 
+.table-box {
+	height: 200px;
+	position: relative;
+	background: #bdc3c7;
+	margin-bottom: 20px;
+}
+
 .menu-box ul {
 	display: inline-block;
 	list-style-type:none;
 	position: absolute;
 	bottom: 0;
+}
+.table-box {
+	height: 200px;
+	position: relative;
+	background: #bdc3c7;
+	margin-bottom: 20px;
 }
 .inline_block p {
     display: inline-block;

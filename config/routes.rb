@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :payments
   #devise_for :admins
   devise_for :users
   resources :managers
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
   get 'pages/Game2'
   get 'pages/Game3'
   get 'pages/ManagerOptions'
+  get "/customers/welcome" => "customers#welcome"
+  get "pages/CustomerHomepage" => "pages#CustomerHomepage"
   
   devise_for :admins do
     get '/admins/sign_out' => 'admins/sessions#destroy'

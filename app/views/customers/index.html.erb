@@ -9,7 +9,7 @@
       <%= link_to 'Request Waiter', waitstaffs_path %>
     </button>
       <button class="btn btn-sm btn-outline-secondary float-left" type="button">
-        <%= link_to 'Pay Now/ View Order', waitstaffs_path %>
+        <%= link_to 'Pay Now/ View Order', payments_path %>
       </button>
     </form>
 
@@ -39,26 +39,42 @@
 </div>
 
 <button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to "Menu", menus_path %>
-
 </button>
 
-<div class="container">
- <img src="winged.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
- <input type="button" value="Game1" onclick="window.location.href='pages/Game1'" />
-</div>
+<!-- START: Welcome to Suit and Thai -->
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to Suit and Thai</h1>
+    <!-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">-->
 
-<div class="container">
- <img src="rapid.jpg" class="img-thumbnail" alt="Rapid Terre" width="304" height="236"> 
+    <p>How many persons are in your party?</p>
+    <a class="btn btn-primary btn-lg" href="managers" role="button" onclick="setPartySize(1)">1</a>
+    <a class="btn btn-primary btn-lg" href="#welcome" role="button">2</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button">3</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button">4</a>
+    <!-- //Maybe there should be a dynamic table in the database that holds the number of customers at a table at a given time -->
 
-<input type="button" value="Game2" onclick="window.location.href='pages/Game2'" />
-</div>
+    <!--
+    <button onclick="setPartySize(1)">1</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg"><%= link_to '2', managers_path %></button>
+    -->
+    <script>
+      function myFunction(int partySize) {
+      /*  thisTable.setPartySize(partySize); 
+      */
+      int x = partySize; 
+      //window.alert(x);
+      document.getElementById("partySize").innerHTML = x;
+      //Could maybe do a window alert for the coupon question?
+      window.alert("");
+      }
+    </script>
 
-<div class="container">
-  <img src="hangman.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
-  <input type="button" value="Game3" onclick="window.location.href='pages/Game3" />
-</div>
+  </div>
+<!-- END: Welcome to Suit and Thai -->
 
-
+<!-- START: "New Customers Junk" -->
+</br></br>
 <table>
   <thead>
     <tr>
@@ -78,7 +94,5 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
 <%= link_to 'New Customer', new_customer_path %>
+<!-- END: "New Customers Junk" -->
