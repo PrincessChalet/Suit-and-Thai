@@ -6,16 +6,14 @@ class OrdersController < ApplicationController
   def index
     @order = Order.all
     
-    #@customers = Customer.all
+    @customers = Customer.all
     #@order = Order.find(params[:customer_id])
   end
 
   # GET /orders/1
   # GET /orders/1.json
   def show
-    #@order = Order.find(params[:customer_id])
-    @order = Order.all
-    render :layout => nil
+   
   end
 
   # GET /orders/new
@@ -32,12 +30,11 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    #@customer = Customer.find(params[:customer_id])
+   # @customer = Customer.new(customer_params)
     #@order = @customer.orders.new(order_params)
     #@order.save
-
     @order = Order.new(order_params)
-    @order.customer = customer_names
+   # @order.customer_names = customer_names
     respond_to do |format|
       if @order.save
         flash[:notice] = "Success!"

@@ -1,7 +1,20 @@
 <h1> Manager Options </h1>
 
+<% if admin_signed_in? %>
 <button type="button" class="btn btn-secondary btn-lg btn-block">
-<%= link_to "Comp an Item", pages_ManagerOptions_path %>
+<%= link_to "Sign Out", destroy_admin_session_path %>
+</button>
+<% end %>
+
+<% if !admin_signed_in? %>
+<button type="button" class="btn btn-secondary btn-lg btn-block">
+<%= link_to "Sign In", new_admin_session_path %>
+</button>
+<% end %>
+
+
+<button type="button" class="btn btn-secondary btn-lg btn-block">
+<%= link_to "Comp an Item", orders_path %>
 </button>
 
 <button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to "Update Menu", menus_path %>

@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
+before_action :authenticate_admin!, only: [:ManagerOptions]
 def NutritionalInfo 
 end
 

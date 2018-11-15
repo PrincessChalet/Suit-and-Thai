@@ -18,8 +18,6 @@
 
 <h1>Customers</h1>
 
-<button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to "Menu", menus_path %>
-</button>
 
 <!-- START: Welcome to Suit and Thai -->
   <div class="jumbotron">
@@ -39,14 +37,9 @@
     <button type="button" class="btn btn-outline-secondary btn-lg"><%= link_to '2', managers_path %></button>
     -->
     <script>
-      function myFunction(int partySize) {
-      /*  thisTable.setPartySize(partySize); 
-      */
-      int x = partySize; 
-      //window.alert(x);
-      document.getElementById("partySize").innerHTML = x;
-      //Could maybe do a window alert for the coupon question?
-      window.alert("");
+      function myFunction()
+      {
+
       }
     </script>
 
@@ -54,7 +47,7 @@
 <!-- END: Welcome to Suit and Thai -->
 
 <!-- START: "New Customers Junk" -->
-</br></br>
+<!--</br></br>
 <table>
   <thead>
     <tr>
@@ -75,4 +68,4 @@
   </tbody>
 </table>
 <button><%= link_to 'New Customer', new_customer_path %></button>
-<!-- END: "New Customers Junk" -->
+END: "New Customers Junk" -->

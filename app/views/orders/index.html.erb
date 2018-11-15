@@ -5,24 +5,23 @@
 <table>
   <thead>
     <tr>
-      <th>Order</th>
       <th>Customer names</th>
-      <th>Tables</th>
       <th>Customizations and Allergies</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @orders.each do |order| %>
+    <% @order.each do |order| %>
       <tr>
-        <td><%= order.order_id %></td>
         <td><%= order.customer_names %></td>
-        <td><%= order.tables %></td>
         <td><%= order.notes %></td>
+
+        <% if admin_signed_in? %>
         <td><%= link_to 'Show', order %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
