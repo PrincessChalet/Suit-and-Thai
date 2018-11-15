@@ -16,7 +16,9 @@ def ManagerOptions
 
 end
 
-def dailyRevenue
+def DailyRevenue
+
+	
 end
 
 
