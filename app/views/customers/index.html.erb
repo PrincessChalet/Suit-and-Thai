@@ -18,26 +18,6 @@
 
 <h1>Customers</h1>
 
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to "Menu", menus_path %>
 </button>
 
@@ -48,10 +28,10 @@
     <hr class="my-4">-->
 
     <p>How many persons are in your party?</p>
-    <a class="btn btn-primary btn-lg" href="managers" role="button" onclick="setPartySize(1)">1</a>
-    <a class="btn btn-primary btn-lg" href="#welcome" role="button">2</a>
-    <a class="btn btn-primary btn-lg" href="#" role="button">3</a>
-    <a class="btn btn-primary btn-lg" href="#" role="button">4</a>
+    <a class="btn btn-primary btn-lg" href="customers/new" role="button" onclick="setPartySize(1)">1</a>
+    <a class="btn btn-primary btn-lg" href="customers/new" role="button" onclick="setPartySize(2)">2</a>
+    <a class="btn btn-primary btn-lg" href="customers/new" role="button" onclick="setPartySize(3)">3</a>
+    <a class="btn btn-primary btn-lg" href="customers/new" role="button" onclick="setPartySize(4)">4</a>
     <!-- //Maybe there should be a dynamic table in the database that holds the number of customers at a table at a given time -->
 
     <!--
@@ -94,5 +74,5 @@
     <% end %>
   </tbody>
 </table>
-<%= link_to 'New Customer', new_customer_path %>
+<button><%= link_to 'New Customer', new_customer_path %></button>
 <!-- END: "New Customers Junk" -->

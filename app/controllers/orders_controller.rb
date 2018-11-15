@@ -4,16 +4,24 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.all
+    @order = Order.all
+    
+    #@customers = Customer.all
+    #@order = Order.find(params[:customer_id])
   end
 
   # GET /orders/1
   # GET /orders/1.json
   def show
+    #@order = Order.find(params[:customer_id])
+    @order = Order.all
+    render :layout => nil
   end
 
   # GET /orders/new
   def new
+    #@customer = Customer.find(params[:customer_id])
+    #@order = @customer.orders.new
     @order = Order.new
   end
 
@@ -24,10 +32,15 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new(order_params)
+    #@customer = Customer.find(params[:customer_id])
+    #@order = @customer.orders.new(order_params)
+    #@order.save
 
+    @order = Order.new(order_params)
+    @order.customer = customer_names
     respond_to do |format|
       if @order.save
+        flash[:notice] = "Success!"
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else
@@ -69,6 +82,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:order_id, :customer_names, :tables)
+      params.require(:order).permit(:customer_names, :tables, :customer_id, :notes)
     end
 end

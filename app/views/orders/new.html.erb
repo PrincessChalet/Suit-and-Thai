@@ -1,5 +1,109 @@
 <h1>New Order</h1>
+<%= form_for @order do |f| %>
+ <!-- <table summary="subject form fields">
+    <tr>
+      <th>Order</th>
+      <td><%= f.text_field(:customer_names) %></td>
+    </tr>
+  </table>-->
+<script>
+function myFunction(int partySize) {
+      /*  thisTable.setPartySize(partySize); 
+      */
+      int x = partySize; 
+      //window.alert(x);
+      document.getElementById("partySize").innerHTML = x;
+      //Could maybe do a window alert for the coupon question?
+      window.alert("");
+      }
+</script>
+
+
+<div class='row'>
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Table Number
+  </button>
+  <div class="dropdown-menu">
+    <button class="dropdown-item" type="button">1</button>
+    <button class="dropdown-item" type="button">2</button>
+    <button class="dropdown-item" type="button">3</button>
+    <button class="dropdown-item" type="button">4</button>
+    <button class="dropdown-item" type="button">5</button>
+    <button class="dropdown-item" type="button">6</button>
+    <button class="dropdown-item" type="button">7</button>
+    <button class="dropdown-item" type="button">8</button>
+    <button class="dropdown-item" type="button">9</button>
+    <button class="dropdown-item" type="button">10</button>
+    <button class="dropdown-item" type="button">11</button>
+    <button class="dropdown-item" type="button">12</button>
+    <button class="dropdown-item" type="button">13</button>
+    <button class="dropdown-item" type="button">14</button>
+    <button class="dropdown-item" type="button">15</button>
+    <button class="dropdown-item" type="button">16</button>
+
+  </div>
+</div>
+<br>
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Appetizers
+  </button>
+  <div class="dropdown-menu">
+    <button class="dropdown-item" type="button">Veggie Spring rolls</button>
+    <button class="dropdown-item" type="button">Corn Patties</button>
+    <button class="dropdown-item" type="button">Gyoza</button>
+	</div>
+</div>
+
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Entrees
+  </button>
+  <div class="dropdown-menu">
+    <button class="dropdown-item" type="button">Pad Thai</button>
+    <button class="dropdown-item" type="button">Yellow Curry</button>
+    <button class="dropdown-item" type="button">Pad See Eew</button>
+  </div>
+</div>
+
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Kids Menu
+  </button>
+   <div class="dropdown-menu">
+    <button class="dropdown-item" type="button">Beef and Broccoli</button>
+    <button class="dropdown-item" type="button">Orange Chicken</button>
+    <button class="dropdown-item" type="button">Fried Rice</button>
+  </div>
+</div>
+
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Desserts
+  </button>
+   <div class="dropdown-menu">
+    <button class="dropdown-item" type="button">Mango sticky rice</button>
+    <button class="dropdown-item" type="button">Custard Sticky Rice</button>
+    <button class="dropdown-item" type="button">Green Tea Ice Cream</button>
+   </div>
+</div>
+
+
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Drinks
+  </button>
+   <div class="dropdown-menu">
+    <button class="dropdown-item" type="button">Hot Tea</button>
+    <button class="dropdown-item" type="button">Iced Tea</button>
+    <button class="dropdown-item" type="button">Soft Drinks</button>
+  </div>
+</div>
+</div>
 
 <%= render 'form', order: @order %>
+<% end %>
 
-<%= link_to 'Back', orders_path %>
+
+<%= link_to 'Back', orders_path %>-->

@@ -5,5 +5,9 @@
   <%= @customer.customer_name %>
 </p>
 
+<button type="button" class="btn btn-secondary btn-lg btn-block"><%= link_to "Menu", menus_path %>
+</button>
+
+<%= link_to 'Add Another', new_customer_path %> |
 <%= link_to 'Edit', edit_customer_path(@customer) %> |
 <%= link_to 'Back', customers_path %>
