@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'pages/ManagerOptions'
   get "/customers/welcome" => "customers#welcome"
   get "pages/CustomerHomepage" => "pages#CustomerHomepage"
-  
+   get 'pages/DailyRevenue'
   devise_for :admins do
     get '/admins/sign_out' => 'admins/sessions#destroy'
   end
