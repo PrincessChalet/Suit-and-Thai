@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
-
-#  devise_for :admins
-
   #devise_for :admins
-
   devise_for :users
   resources :managers
   resources :orders
@@ -14,15 +10,13 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root "managers#index"
-
-  get 'pages/appetizers'
-
   get 'pages/NutritionalInfo'
   get 'pages/Game1'
   get 'pages/Game2'
   get 'pages/Game3'
   get 'pages/ManagerOptions'
-
+  get "/customers/welcome" => "customers#welcome"
+  get "pages/CustomerHomepage" => "pages#CustomerHomepage"
   
   devise_for :admins do
     get '/admins/sign_out' => 'admins/sessions#destroy'

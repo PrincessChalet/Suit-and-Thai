@@ -2,13 +2,6 @@
 
 <h1>Managers</h1>
 <button type="button" class="btn btn-secondary btn-lg btn-block">
-
-<% if !admin_signed_in? %>
-  <%= link_to 'log in',  new_admin_session_path%>
-  <% end %>
-  <% if admin_signed_in? %>
-  <%= link_to 'log out',  destroy_admin_session_path, :method => :delete  %>
-
  <% if !admin_signed_in? %>
     <%= link_to 'log in',  new_admin_session_path%>
   <% end %>
@@ -39,4 +32,4 @@
 
 <br>
 
-<!-- <%= link_to 'New Manager', new_manager_path %> -->
+<!--<%= link_to 'New Manager', new_manager_path %> -->

@@ -12,7 +12,7 @@
       <th scope="col">Order</th>
       <th scope="col">Status</th>
       <th scope="col">Chef</th>
-      <th scope="col">Customization</th>
+      <th scope="col">Notes (Allergies, Customizations)</th>
     </tr>
   </thead>
   <tbody>
@@ -20,116 +20,265 @@
       <th scope="row">1</th>
       <td>Chicken Tenders</td>
       <td>
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Open</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="Completed">Completed</a><br>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Completed">Completed</a><br>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Completed">Completed</a><br>
-          </div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">Complete
+          </label>
         </div>
       </td>
       <td>
-        <div class="dropdown">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Open</button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Chef 1</a><br>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Chef 2</a><br>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Chef 3</a><br>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Chef 4</a><br>
-          </div>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
+        </div>
+      </td>
+      <td>Ranch on the side</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Chicken Tenders</td>
+      <td>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+      </label>
+      <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off">Complete
+      </label>
+    </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
         </div>
       </td>
       <td>Ranch on the Side</td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <th scope="row">1</th>
       <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
+      <td>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">Complete
+          </label>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
+        </div>
+      </td>
       <td>Ranch on the Side</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">1</th>
       <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
+      <td>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">Complete
+          </label>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
+        </div>
+      </td>
+      <td>Ranch on the Side</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">1</th>
       <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
+      <td>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">Complete
+          </label>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
+        </div>
+      </td>
+      <td>Ranch on the Side</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">1</th>
       <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
+      <td>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">Complete
+          </label>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
+        </div>
+      </td>
+      <td>Ranch on the Side</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">1</th>
       <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
-      </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
+      <td>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">Complete
+          </label>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
+        </div>
+      </td>
+      <td>Ranch on the Side</td>
     </tr>
     <tr>
-      <th scope="row">3</th>
+      <th scope="row">1</th>
       <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
-    </tr>
-    <tr>  
-      <th scope="row">3</th>
-      <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Chicken Tenders</td>
-      <td>Claimed</td>
-      <td>Chef 1</td>
-      <td>Ranch on the Side</td>  
+      <td>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="options" id="option1" autocomplete="off" checked>Open
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option2" autocomplete="off">Claimed
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="option3" autocomplete="off">Complete
+          </label>
+        </div>
+      </td>
+      <td>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+          <option>Chef Name</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Bob</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Tina</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Jene</option>
+          <div class="dropdown-divider"></div>
+          <option>Chef Louis</option>
+          </select>
+        </div>
+      </td>
+      <td>Ranch on the Side</td>
     </tr>
   </tbody>
 </table>
